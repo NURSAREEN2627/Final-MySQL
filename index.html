@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince School</title>
+
+        <!-- Style -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link href="assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+        <!-- Fonts and icons -->
+        <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300"
+            rel="stylesheet" type="text/css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.css">
+            
+    </head>
+    <body>
+      <!-- Navbar -->
+
+        <div class="fresh-table toolbar-color-azure">
+            <!--
+              Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange
+              Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
+            -->
+            <div class="toolbar">
+                <p class="btn btn-primary">Prince School
+                <button id="createBtn" class="btn btn-default">Create</button></p>
+            </div>
+
+            <!--CreateUserModal-->
+
+            
+            <div>
+              
+            <table id="fresh-table" class="table" data-sortable="true">
+                <thead>
+                  <th data-field="Student_ID" data-sortable="true">Student_ID</th>
+                  <th data-field="First_Name" data-sortable="true">First_Name</th>
+                  <th data-field="Last_Name" data-sortable="true">Last_Name</th>
+                  <th data-field="Username" data-sortable="true">Username</th>
+                  <th data-field="Major" data-sortable="true">Major</th>
+                  <th data-field="Ability" data-sortable="true">Ability</th>
+                  <th data-field="Kingdom" data-sortable="true">Kingdom</th>
+                  <th data-field="Phone_Number" data-sortable="true">Phone_Number</th>
+                  <th data-field="Grade" data-sortable="true">Grade</th>
+                  <th data-field="actions" data-formatter="operateFormatter" data-events="operateEvents">Actions</th>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Javascript -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script
+                src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+            <script type="text/javascript"></script>
+            <script
+            src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
