@@ -12,7 +12,6 @@ window.operateEvents = {
         // console.log(value, row, index)
         Swal.fire({
             title: "Data Updater",
-            customClass: 'swal-box',
             html:
                 '<div class="align-left" >' +
                 '<input class="form-control" id="Student_ID" placeholder="Student_ID" value="' + row.Student_ID + '"></div>' +
@@ -133,7 +132,6 @@ $(function () {
     $createBtn.click(function () {
         Swal.fire({
             title: "Data Creator",
-            customClass: 'swal-box',
             html:
                 '<div class="align-left" >' +
 
@@ -345,4 +343,41 @@ function dataUpdate(id) {
             //getUserData();
         });
     }
+}
+
+function showProfile() {
+    Swal.fire({
+        confirmButton: false,
+        customClass: 'swal-box',
+        showConfirmButton: false,
+        html: '<div class="card user-card-full">' +
+            '<div class="row m-l-0 m-r-0">' +
+            '<div class="col-sm-4 bg-c-lite-green user-profile">' +
+            '<div class="card-block text-center text-white">' +
+            '<div class="m-b-25">' +
+            '<img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t39.30808-6/295079178_3252839608321332_3651102686238272090_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFZ5x3lcGsx_ENNJfJ23rP0vjHUEOm-lci-MdQQ6b6VyKDNhDIre6Xgg58_Y_6iFM0KjcxujUoso6CcWyrnIcGL&_nc_ohc=yZkKMq274pwAX_Jif9M&_nc_oc=AQkptrqQQ2j60bP2ZodTGnluqbRVmaP72wM4HL3IknMf_X19S-M4X58cOhaU0ou4yE8&_nc_ht=scontent.fbkk10-1.fna&oh=00_AfALUFjEzQy05VapGwjDlCSZFw0U43oqa65-741nXQQKfg&oe=63AD5C08" class="img-radius" alt="User-Profile-Image">' +
+            '</div>' +
+            '<h6 class="f-w-600" style="color:white;">Dechnarong Matham</h6>' +
+            '<p style="color:white;">Guitar</p>' +
+            ' <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>' +
+            '</div>' +
+            ' </div>' +
+            ' <div class="col-sm-8">' +
+            '<div class="card-block">' +
+            '<h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>' +
+            '<div class="row"  style="text-align:left;">' +
+            '<div style="form-control">'+
+
+                '<h6 class="m-b-10 f-w-600">Student ID</h6>' +
+                '<h6 class="text-muted f-w-400" style="background-color:#ededed;">64105075</h6>' +
+
+                '<h6 class="m-b-10 f-w-600">Email</h6>' +
+                '<h6 class="text-muted f-w-400" style="background-color:#ededed;">dechnarong.ma@mail.wu.ac.th</h6>' +
+
+                '<h6 class="m-b-10 f-w-600">Phone Number</h6>' +
+                '<h6 class="text-muted f-w-400" style="background-color:#ededed;">0986745429</h6>' +
+            '</div>'+
+            '</div>' +
+            '</div></div></div></div>'
+    })
 }
