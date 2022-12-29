@@ -1,0 +1,66 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 29, 2022 at 10:27 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `miniproject_imi62231`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `userID` int(11) NOT NULL,
+  `First_Name` varchar(500) NOT NULL,
+  `Last_Name` varchar(500) NOT NULL,
+  `Username` varchar(500) NOT NULL,
+  `Major` varchar(500) NOT NULL,
+  `Academic` varchar(20) NOT NULL,
+  `Grade` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`userID`, `First_Name`, `Last_Name`, `Username`, `Major`, `Academic`, `Grade`) VALUES
+(64102635, 'ชาญานิศ', 'คงปาน', 'max_2', 'สารสนเทศ', '2', '3.35'),
+(64102668, 'ชญานิษฐ์', 'ฮาแว', '_nxx_2', 'สารสนเทศ', '2', '3.69'),
+(64106818, 'นัจมีย์', 'โต๊ะธขวัญ', 'donut_1', 'สารสน่ทศ', '2', '4.00'),
+(64107410, 'นูรซารีน', 'หะยียูโซะ', 'Beam_1', 'สารสนเทศ', '2', '3.30'),
+(64109473, 'พัชรพร', 'อมรศักดิ์', 'fa_12', 'สารสนเทศ', '2', '3.00'),
+(64110696, 'ภัทราภรณ์', 'ยอดเพ็ชร', 'fiww_15', 'สารสนเทศ', '2', '3.89'),
+(64111230, 'มัทนพร', 'แก้วอำไพ', 'prim_11', 'สารสนเทศ', '2', '3.89');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`userID`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
